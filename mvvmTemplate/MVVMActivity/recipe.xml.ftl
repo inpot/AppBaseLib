@@ -2,6 +2,12 @@
 <#import "root://activities/common/kotlin_macros.ftl" as kt>
 <recipe>
     <@kt.addAllKotlinDependencies />
+
+    <dependency mavenUrl="com.android.support:design:${buildApi}.+" />
+    <dependency mavenUrl="com.android.support.constraint:constraint-layout:+" />
+    <dependency mavenUrl="com.android.support:appcompat-v7:${buildApi}.+" />
+    <dependency mavenUrl="com.android.support:gridlayout-v7:${buildApi}.+" />
+
     <merge from="root/AndroidManifest.xml.ftl"
            to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
     <merge from="root/res/values/manifest_strings.xml.ftl"

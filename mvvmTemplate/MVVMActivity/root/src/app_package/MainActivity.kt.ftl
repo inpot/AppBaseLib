@@ -2,12 +2,12 @@ package ${escapeKotlinIdentifiers(packageName)}
 
 import android.os.Bundle
 import app.base.BaseActivity
-import ${applicationPackage}.databinding.Activity${moduleName?cap_first}Binding
+import ${escapeKotlinIdentifiers(packageName)}.databinding.Activity${moduleName?cap_first}Binding
 import ${escapeKotlinIdentifiers(packageName)}.di.Dagger${moduleName?cap_first}Contract_Comp
 import ${escapeKotlinIdentifiers(packageName)}.di.${moduleName?cap_first}Contract
 import ${escapeKotlinIdentifiers(packageName)}.di.${moduleName?cap_first}Module
 import javax.inject.Inject
-import ${applicationPackage}.R
+import ${escapeKotlinIdentifiers(packageName)}.R
 
 class ${activityClass} : BaseActivity(),${moduleName?cap_first}Contract.View {
 
